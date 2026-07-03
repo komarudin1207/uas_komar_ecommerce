@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas Modern & Elegan - SDN Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Tambahan khusus untuk Halaman Fasilitas Elegan */
+        .intro-fasilitas {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+        }
+        .intro-fasilitas p {
+            color: #666;
+            font-size: 16px;
+        }
+        .grid-fasilitas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .kartu-fasilitas {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eef2f5;
+        }
+        /* Efek interaktif elegan saat kursor diarahkan ke kartu */
+        .kartu-fasilitas:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(2, 117, 216, 0.1);
+        }
+        .wadah-gambar {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+        .wadah-gambar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .kartu-fasilitas:hover .wadah-gambar img {
+            transform: scale(1.08); /* Efek zoom-in lembut pada gambar */
+        }
+        .konten-fasilitas {
+            padding: 25px;
+        }
+        .konten-fasilitas h4 {
+            font-size: 18px;
+            color: #0275d8;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .konten-fasilitas p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER & NAVIGASI -->
+    <header>
+        <div class="nav-container">
+            <div class="logo"><h2>SDN Nusantara</h2></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="alur.html">Alur</a></li>
+                    <li><a href="syarat.html">Syarat</a></li>
+                    <li><a href="biaya.html">Biaya</a></li>
+                    <li><a href="fasilitas.html" class="active">Fasilitas</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="formulir.html">Formulir</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container">
+        
+        <div class="intro-fasilitas">
+            <h2>Fasilitas Pembelajaran Modern</h2>
+            <p style="margin-top: 10px;">Kami percaya bahwa lingkungan belajar yang representatif, bersih, dan berbasis teknologi tinggi memainkan peran krusial dalam memaksimalkan potensi akademik dan kenyamanan psikologis anak.</p>
+        </div>
+        
+        <!-- GRID KARTU FASILITAS ELEGAN -->
+        <div class="grid-fasilitas">
+            
+            <!-- Fasilitas 1: Ruang Kelas -->
+            <div class="kartu-fasilitas">
+                <div class="wadah-gambar">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80" alt="Ruang Kelas Smart Classroom">
+                </div>
+                <div class="konten-fasilitas">
+                    <h4>Smart Classroom & Full AC</h4>
+                    <p>Setiap ruang kelas dirancang ergonomis, dilengkapi penyejuk udara (AC), proyektor multimedia, dan papan tulis interaktif guna menciptakan atmosfer belajar yang fokus, sejuk, dan interaktif.</p>
+                </div>
+            </div>
+
+            <!-- Fasilitas 2: Perpustakaan -->
+            <div class="kartu-fasilitas">
+                <div class="wadah-gambar">
+                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80" alt="Perpustakaan Digital">
+                </div>
+                <div class="konten-fasilitas">
+                    <h4>Perpustakaan & Ruang Baca Digital</h4>
+                    <p>Menyediakan ribuan koleksi buku fisik, area membaca lesehan yang nyaman, serta komputer akses *E-Book* ramah anak untuk menumbuhkan budaya literasi sejak dini.</p>
+                </div>
+            </div>
+
+            <!-- Fasilitas 3: Lab Komputer -->
+            <div class="kartu-fasilitas">
+                <div class="wadah-gambar">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=600&q=80" alt="Laboratorium Komputer Modern">
+                </div>
+                <div class="konten-fasilitas">
+                    <h4>Laboratorium Komputer Terintegrasi</h4>
+                    <p>Fasilitas komputer modern dengan koneksi internet cepat yang disaring aman untuk anak. Digunakan untuk pengenalan dasar teknologi informasi (IT) dan pelaksanaan asesmen digital.</p>
+                </div>
+            </div>
+
+            <!-- Fasilitas 4: Lapangan Olahraga -->
+            <div class="kartu-fasilitas">
+                <div class="wadah-gambar">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Lapangan Olahraga Hijau">
+                </div>
+                <div class="konten-fasilitas">
+                    <h4>Sport Center & Lapangan Hijau</h4>
+                    <p>Area olahraga yang luas dan aman untuk kegiatan fisik anak, mencakup lapangan sepak bola mini, area basket, serta lintasan lari ramah anak yang dikelilingi taman hijau.</p>
+                </div>
+            </div>
+
+            <!-- Fasilitas 5: Ruang UKS -->
+            <div class="kartu-fasilitas">
+                <div class="wadah-gambar">
+                    <img src="https://images.unsplash.com/photo-1538108176447-2af0513462fe?auto=format&fit=crop&w=600&q=80" alt="Klinik Sekolah UKS">
+                </div>
+                <div class="konten-fasilitas">
+                    <h4>Ruang Medis & UKS Siaga</h4>
+                    <p>Layanan kesehatan pertama sekolah yang bersih, dilengkapi kasur perawatan, obat-obatan dasar, serta bekerja sama dengan tenaga medis puskesmas untuk memantau tumbuh kembang siswa.</p>
+                </div>
+            </div>
+
+            <!-- Fasilitas 6: Taman Bermain -->
+            <div class="kartu-fasilitas">
+                <div class="wadah-gambar">
+                    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=600&q=80" alt="Taman Bermain Edukatif">
+                </div>
+                <div class="konten-fasilitas">
+                    <h4>Taman Bermain Edukatif (Outdoor)</h4>
+                    <p>Area rekreasi luar ruangan yang dilengkapi berbagai wahana permainan aman untuk melatih motorik kasar anak di waktu istirahat secara gembira.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 SDN Nusantara - Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

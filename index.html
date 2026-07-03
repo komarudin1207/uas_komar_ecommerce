@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB Online SDN Nusantara - Beranda Ceria</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Tambahan Khusus Beranda dengan Background Anak SD */
+        .hero-modern {
+            /* Menggunakan gambar anak-anak sekolah dasar (SD) yang ceria dengan overlay gelap agar tulisan kontras */
+            background: linear-gradient(rgba(1, 40, 76, 0.75), rgba(2, 117, 216, 0.65)), 
+                        url('https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            margin-bottom: 30px;
+            border-bottom: 5px solid #ffc107;
+        }
+        .hero-modern h1 {
+            font-size: 42px;
+            font-weight: 800;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            margin-bottom: 15px;
+        }
+        .hero-modern p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 25px auto;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+            font-weight: 500;
+        }
+        
+        /* Seksi Statistik */
+        .seksi-statistik {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .kotak-stat {
+            background: #0275d8;
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .kotak-stat h3 { font-size: 32px; font-weight: bold; margin-bottom: 5px; color: #ffc107; }
+        
+        /* Seksi Sambutan Flexbox */
+        .seksi-sambutan {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+        .foto-kepsek { flex: 1; max-width: 250px; }
+        .foto-kepsek img { width: 100%; border-radius: 50%; border: 5px solid #eef2f5; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .teks-sambutan { flex: 3; }
+
+        /* Seksi Berita / Pengumuman Grid */
+        .grid-berita {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .kartu-berita {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #eef2f5;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            transition: 0.3s;
+        }
+        .kartu-berita:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+        .kartu-berita img { width: 100%; height: 180px; object-fit: cover; }
+        .konten-berita { padding: 20px; }
+        .konten-berita h4 { color: #0275d8; margin-bottom: 10px; }
+        .konten-berita p { font-size: 14px; color: #666; }
+
+        @media (max-width: 768px) {
+            .seksi-sambutan { flex-direction: column; text-align: center; }
+            .hero-modern h1 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER & NAVIGASI -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h2>SDN Nusantara</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="alur.html">Alur</a></li>
+                    <li><a href="syarat.html">Syarat</a></li>
+                    <li><a href="biaya.html">Biaya</a></li>
+                    <li><a href="fasilitas.html">Fasilitas</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="formulir.html">Formulir</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO BANNER DENGAN BACKGROUND ANAK SD -->
+    <section class="hero-modern">
+        <h1>Penerimaan Peserta Didik Baru (PPDB)</h1>
+        <p>Mari Membimbing Potensi Eminen Si Kecil di Sekolah Terakreditasi A+. Bersama Mengukir Prestasi, Cerdas, dan Berakhlak Mulia.</p>
+        <a href="formulir.html" class="btn-daftar" style="font-size: 18px; padding: 15px 35px;">Mulai Pendaftaran Online &rarr;</a>
+    </section>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container" style="background: transparent; box-shadow: none; padding: 0;">
+        
+        <!-- 1. SEKSI SAMBUTAN KEPALA SEKOLAH -->
+        <section class="seksi-sambutan">
+            <div class="foto-kepsek">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Kepala Sekolah SDN Nusantara">
+            </div>
+            <div class="teks-sambutan">
+                <h3 style="color: #0275d8; margin-bottom: 5px;">Sambutan Kepala Sekolah</h3>
+                <strong style="color: #555; display:block; margin-bottom: 10px;">Dr. Hani Handayani, M.Pd.</strong>
+                <p>"Assalamu'alaikum Wr. Wb. Selamat datang di portal resmi PPDB SDN Nusantara. Kami berkomitmen menyelenggarakan pendidikan dasar yang adaptif terhadap era digital namun tetap menjunjung tinggi kecerdasan emosional dan akhlak mulia. Mari bergabung bersama keluarga besar kami!"</p>
+            </div>
+        </section>
+
+        <!-- 2. SEKSI STATISTIK SEKOLAH -->
+        <section class="seksi-statistik">
+            <div class="kotak-stat">
+                <h3>A+</h3>
+                <p>Akreditasi Sekolah</p>
+            </div>
+            <div class="kotak-stat">
+                <h3>550+</h3>
+                <p>Siswa Aktif</p>
+            </div>
+            <div class="kotak-stat">
+                <h3>32</h3>
+                <p>Guru Bersertifikasi</p>
+            </div>
+            <div class="kotak-stat">
+                <h3>15+</h3>
+                <p>Ekstrakurikuler & Prestasi</p>
+            </div>
+        </section>
+
+        <!-- 3. SEKSI INFO / BERITA TERBARU -->
+        <section style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+            <h3 style="text-align: center; color: #333; margin-bottom: 10px;">Informasi & Berita Terkini</h3>
+            <p style="text-align: center; color: #777; font-size: 14px; margin-bottom: 30px;">Pantau terus agenda dan pengumuman terbaru seputar proses seleksi siswa baru</p>
+            
+            <div class="grid-berita">
+                <!-- Berita 1 -->
+                <div class="kartu-berita">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=500&q=80" alt="Sosialisasi Kurikulum">
+                    <div class="konten-berita">
+                        <h4>Materi Sosialisasi PPDB 2026</h4>
+                        <p>Bagi orang tua yang ingin mengetahui rincian program kerja sekolah, unduh berkas paparan sosialisasinya di sini...</p>
+                    </div>
+                </div>
+
+                <!-- Berita 2 -->
+                <div class="kartu-berita">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=500&q=80" alt="Gedung Sekolah">
+                    <div class="konten-berita">
+                        <h4>Kuota Jalur Zonasi Tersisa 40%</h4>
+                        <p>Pendaftaran gelombang pertama jalur zonasi lingkungan sekolah diperkirakan akan penuh pada akhir pekan ini...</p>
+                    </div>
+                </div>
+
+                <!-- Berita 3 -->
+                <div class="kartu-berita">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=500&q=80" alt="Pelayanan PPDB">
+                    <div class="konten-berita">
+                        <h4>Layanan Helpdesk Offline</h4>
+                        <p>Kesulitan mendaftar online? Panitia menyediakan posko bantuan tatap muka di aula sekolah setiap hari kerja.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="margin-top: 50px;">
+        <p>&copy; 2026 SDN Nusantara - Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
